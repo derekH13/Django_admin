@@ -15,7 +15,11 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-TEMPLATES_DIRS = os.path.join(BASE_DIR, 'D:/OneDrive/Programação/Repositorios/django-personal-page/mysite/templates')
+# pasta de template esta na raiz do prjeto
+TEMPLATES_DIRS = os.path.join(BASE_DIR, "templates")
+
+TEMPLATES_DIRS = os.path.join(
+    BASE_DIR, 'D:/OneDrive/Programação/Repositorios/django-personal-page/mysite/templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -53,6 +57,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
+# dentro do dir declarar template_dirs
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
