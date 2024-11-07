@@ -18,8 +18,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # pasta de template esta na raiz do prjeto
 TEMPLATES_DIRS = os.path.join(BASE_DIR, "templates")
 
-TEMPLATES_DIRS = os.path.join(
-    BASE_DIR, 'D:/OneDrive/Programação/Repositorios/django-personal-page/mysite/templates')
+# TEMPLATES_DIRS = os.path.join(
+#     BASE_DIR, 'D:/OneDrive/Programação/Repositorios/django-personal-page/mysite/templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
