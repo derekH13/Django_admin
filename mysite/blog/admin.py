@@ -18,6 +18,13 @@ class PostAdm(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
+class PostAdmExercicio(admin.ModelAdmin):
+    list_display = ['title', 'slug', 'status', 'created_on']
+    list_filter = ('status', 'created_on')
+    search_fields = ['title', 'content']
+    prepopulated_fields = {'slug': ('title',)}
+
+
 class PostAdministrador(admin.ModelAdmin):
     list_display = ['title', 'slug', 'status', 'created_on']
     list_filter = ('status', 'created_on')
@@ -25,4 +32,4 @@ class PostAdministrador(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
 
 
-admin.site.register(Post, PostAdministrador)
+admin.site.register(Post, PostAdmExercicio)
